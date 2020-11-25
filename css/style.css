@@ -1,12 +1,28 @@
 /* DEBUG */
 .h_100{
-  height: 100px;
+  height: 900px;
   background-color: coral;
   border: 1px solid black;
 
 }
 
+.h_80nested{
+  height: 30px;
+  background-color: red;
+  border: 1px solid black;
+  padding: 20px;
+
+}
+
 /* /DEBUG */
+
+
+/* REUSABLE CLASSES */
+.bg-lightgray{background-color: #F3F5F9}
+
+
+/* /REUSABLE CLASSES */
+
 
 
 
@@ -22,11 +38,16 @@
 
 
 /* CUSTOMER */
-#customer{
+#customer h5{
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #8993AA;
+  margin-top: 40px;
+}
 
+#customer img{
 
-  height: 800px;
-  background-color: green;
 }
 
 
@@ -45,3 +66,65 @@
 
 
 /* /SEAMLESSLY */
+
+
+
+/* DESIGNED */
+#designed{
+
+
+  height: 500px;
+  background-color: pink;
+}
+
+
+/* /DESIGNED */
+
+
+
+/* FEATURES */
+#features{
+
+
+
+  height: 500px;
+
+}
+
+
+/* /FEATURES */
+
+
+
+/* REGIONS */
+#regions{
+
+
+  height: 1000px;
+  background-color: #0044C3;
+}
+
+
+/* /REGIONS */
+
+
+
+/* TEAMS */
+#teams{
+
+
+  height: 700px;
+}
+
+/* /TEAMS */
+
+
+/* GET STARTED */
+#getstarted{
+  background-color: #00239E;
+
+
+  height: 800px;
+}
+
+/* /GET STARTED */
