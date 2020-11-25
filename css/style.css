@@ -1,0 +1,47 @@
+/* DEBUG */
+.h_100{
+  height: 100px;
+  background-color: coral;
+  border: 1px solid black;
+
+}
+
+/* /DEBUG */
+
+
+
+/* JUMBO */
+#jumbo{
+  background-image: url('../img/bg-home-1.jpg');
+  height: 300px;
+}
+
+
+/* /JUMBO */
+
+
+
+/* CUSTOMER */
+#customer{
+
+
+  height: 800px;
+  background-color: green;
+}
+
+
+/* /CUSTOMER */
+
+
+
+/* SEAMLESSLY */
+#seamlessly{
+
+
+  height: 500px;
+  background-color: blue;
+}
+
+
+
+/* /SEAMLESSLY */
