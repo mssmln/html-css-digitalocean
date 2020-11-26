@@ -11,12 +11,106 @@
 </head>
 <body>
   <!-- NAVBAR -->
-
+  <header>
+    <nav class="header_navbar navbar-fixed-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-3">
+            <a href="#" class="header_logo">
+              <img class="logo" src="img/logo.png" alt="DigitalOcean">
+            </a>
+          </div>
+            <!-- menu mobile nascosto in lg -->
+          <div class="header_hamburger_menu hidden-lg">
+            <div class="col-xs-9 text-right">
+              <i aria-hidden class="fas fa-bars" title="Menu"></i>
+              <span class="sr-only">Menu</span>
+            </div>
+          </div>
+            <!-- menu visibile in lg -->
+          <div class="visible-lg-block">
+            <div class="col-lg-5">
+              <!-- sfruttiamo list-inline per il menu -->
+              <ul class="header_navbar_ul list-inline text-left">
+                <li class="drop"><a href="#">Products</a>
+                </li>
+                <li>
+                  <a href="#">Customers</a>
+                </li>
+                <li class="drop">
+                  <a href="#">Community</a>
+                </li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <ul class="header_navbar_ul list-inline text-right">
+                <li>
+                  <a href="#">Docs</a>
+                </li>
+                <li class="drop">
+                  <a href="#">Support</a>
+                </li>
+                <li>
+                  <a href="#">Login</a>
+                </li>
+                <li>
+                  <a href="#" class="btn btn-default btn_white_blue">Sign Up</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
   <!-- /NAVBAR -->
 
 
   <!-- JUMBO -->
-
+  <section id="jumbotron" class="jumbotron_do padding_top_60 padding_bottom_60">
+    <div class="container">
+      <div class="row">
+        <div class="jumbotron_text col-xs-12 col-sm-7 white_color">
+          <h1>The simplest cloud platform for developers &amp; teams</h1>
+          <p class="medium_text">Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you’re running one virtual machine or ten thousand.</p>
+        </div>
+        <div class="jumbotron_login col-xs-12 col-sm-5">
+          <div class="jumbotron_login_wrapper bg_white">
+            <div class="row">
+              <div class="col-xs-12">
+                <h2 class="text-center">Deploy your app in seconds.<br>
+                  <span class="blue_color margin_top_10 display_block">Get started now.</span>
+                </h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <form action="#">
+                  <div class="margin_bottom_10">
+                    <input type="text" name="email" value="" placeholder="Email">
+                  </div>
+                  <div class="margin_bottom_10">
+                    <input type="password" name="password" value="" placeholder="Password">
+                  </div>
+                  <div class="margin_bottom_10">
+                    <input type="submit" name="" value="Create your account" class="btn btn-default btn_blue_opacity">
+                  </div>
+                  <div class="margin_bottom_10">
+                    <!-- per creare l'icona nel bottone usiamo un before -->
+                    <a class="btn btn-default btn_white_shadow google_signup"> Sign up with google</a>
+                  </div>
+                  <div class="margin_bottom_10 text-center">
+                    <span class="small_text relative">By signing up you agree to the <a href="#" class="blue_color text_underline">Terms of Service</a>.</span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- /JUMBO -->
 
 
@@ -31,29 +125,29 @@
         </div>
 
         <div class="row">
-          <div class="col-xs-6 col-sm-2">
+          <div class="col-xs-6 col-sm-2 brand_">
             <img class="img-responsive center-block" src="img/logo_docker.png" alt="docker">
           </div>
-          <div class="col-xs-6 col-sm-2">
+          <div class="col-xs-6 col-sm-2 brand_">
             <img class="img-responsive center-block" src="img/logo_gitlab.png" alt="gitlab">
           </div>
-          <div class="col-xs-6 col-sm-2">
+          <div class="col-xs-6 col-sm-2 brand_">
             <img class="img-responsive center-block" src="img/logo_slack.png" alt="slack">
           </div>
-          <div class="col-xs-6 col-sm-2">
+          <div class="col-xs-6 col-sm-2 brand_">
             <img class="img-responsive center-block" src="img/logo_hashicorp.png" alt="hashicorp">
           </div>
-          <div class="col-xs-6 col-sm-2">
+          <div class="col-xs-6 col-sm-2 brand_">
             <img class="img-responsive center-block" src="img/logo_hashicorp.png" alt="hashicorp">
           </div>
-          <div class="col-xs-6 col-sm-2">
+          <div class="col-xs-6 col-sm-2 brand_">
             <img class="img-responsive center-block" src="img/logo_splunk.png" alt="splunk">
           </div>
 
         </div>
 
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col-xs-12 text-center">
             <a href="#">View customers stories &gt;</a>
           </div>
         </div>
@@ -68,18 +162,46 @@
     <section id="seamlessly">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 h_100"></div>
+          <div class="col-xs-12 text-center">
+            <h2>Deploy and scale seamlessly</h2>
+            <p>Our optimized process saves your team time when running and scaling distributed applications, AI &amp; machine learning workloads, hosted services, client websites, or CI&sol;CD environments.</p>
+          </div>
         </div>
 
 
         <div class="row">
-          <div class="col-xs-12 col-sm-4 h_100"></div>
-          <div class="col-xs-12 col-sm-8 h_100">
+          <nav class="col-xs-12 col-sm-4">
+            <ul>
+              <li><a href="#">deploy</a></li>
+              <li><a href="#">manage</a></li>
+              <li><a href="#">secure</a></li>
+              <li><a href="#">scale</a></li>
+              <li><a href="#">monitor</a></li>
+
+            </ul>
+          </nav>
+          <div class="col-xs-12 col-sm-8">
             <div class="row">
-              <div class="col-xs-12 col-sm-6 h_100">c</div>
-              <div class="col-xs-12 col-sm-6 h_100">o</div>
-              <div class="col-xs-12 col-sm-6 h_100">one</div>
-              <div class="col-xs-12 col-sm-6 h_100">glo</div>
+              <div class="col-xs-12 col-sm-6 box_">
+                <img src="https://prismic-io.s3.amazonaws.com/www-static/16ae92b4-6939-446c-b6a3-0ffec01cdc14_kublogoicon.svg" alt="kubernetes">
+                <h4>Cluster deployments</h4>
+                <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+              </div>
+              <div class="col-xs-12 col-sm-6 box_">
+                <img src="https://prismic-io.s3.amazonaws.com/www-static/9d343e9c-fe74-4979-8ad9-e8efc58d6ee7_dropletinboxicon.svg" alt="droplet">
+                <h4>Cluster deployments</h4>
+                <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+              </div>
+              <div class="col-xs-12 col-sm-6 box_">
+                <img class="m-t-30" src="https://prismic-io.s3.amazonaws.com/www-static/936bb585-99ba-460d-ae2f-7bbdae8896cc_stacksplusicon.svg" alt="click">
+                <h4>Cluster deployments</h4>
+                <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+              </div>
+              <div class="col-xs-12 col-sm-6 box_">
+                <img class="m-t-30" src="https://prismic-io.s3.amazonaws.com/www-static/fe503988-b608-4666-8824-e9f37681a852_featured-AP-icon.svg" alt="app platform">
+                <h4>Cluster deployments</h4>
+                <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+              </div>
 
             </div>
           </div>
@@ -94,15 +216,22 @@
 
 
     <!-- DESIGNED -->
-    <section id="designed">
+    <section id="designed" class="bg-lightgray text-center">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 h_100"></div>
+          <div class="col-xs-12">
+            <h2>Designed for developers</h2>
+            <p class="m-t-30">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+            <i class="fas fa-chevron-left"></i>
+          </div>
         </div>
 
 
         <div class="row">
-          <div class="col-xs-12 h_100"></div>
+          <div class="col-xs-10 col-xs-offset-1">
+            <img class="img-responsive center-block" src="img/screenshot-create-droplet-12336b41.jpg" alt="droplet">
+            <h6>Create compute servers in 55 seconds or less.</h6>
+          </div>
         </div>
       </div>
 
